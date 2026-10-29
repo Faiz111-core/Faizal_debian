@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zal Net - WiFi RT/RW Net</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080d1b;color:#fff;line-height:1.6}
+.container{width:90%;max-width:1100px;margin:auto}
+header{background:#101a30;padding:18px 0;border-bottom:1px solid #263957}
+nav{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-size:25px;font-weight:bold;color:#35d9ff}
+nav a{color:white;text-decoration:none;margin-left:15px}
+.hero{text-align:center;padding:90px 15px;background:radial-gradient(circle at top,#123c70,#080d1b 70%)}
+.hero h1{font-size:clamp(32px,6vw,55px);line-height:1.2;margin-bottom:20px}
+.hero h1 span{color:#35d9ff}
+.hero p{color:#b5c5dc;max-width:600px;margin:0 auto 25px}
+.btn{display:inline-block;background:#087cff;color:white;padding:12px 22px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-weight:bold}
+.btn:hover{background:#35a0ff}
+section{padding:65px 0}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:32px;margin-bottom:10px}
+.heading p{color:#a6b5cc}
+.features,.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#101a30;border:1px solid #263957;border-radius:15px;padding:25px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p,.card li{color:#b5c5dc}
+.features .card{text-align:center}
+.icon{font-size:35px;margin-bottom:12px}
+#paket{background:#0b1222}
+.price{font-size:29px;font-weight:bold;color:#35d9ff;margin:15px 0}
+.price small{font-size:13px;color:#a6b5cc;font-weight:normal}
+.card ul{list-style:none;margin:18px 0}
+.card li{padding:5px 0}
+.card li::before{content:"✓ ";color:#20d995}
+.card .btn{width:100%;text-align:center}
+.popular{border-color:#1685ff;position:relative}
+.tag{color:#35d9ff;font-size:12px;font-weight:bold}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;text-align:center}
+.steps h3{margin:10px 0}
+.steps p{color:#a6b5cc}
+#daftar{background:#0b1222}
+.form-box{max-width:650px;margin:auto;background:#101a30;padding:30px;border-radius:15px;border:1px solid #263957}
+.form-box label{display:block;margin:15px 0 6px;font-size:14px}
+.form-box input,.form-box select,.form-box textarea{width:100%;padding:13px;background:#080d1b;color:white;border:1px solid #263957;border-radius:7px}
+.form-box button{width:100%;margin-top:20px;font-size:15px}
+.note{font-size:12px;color:#a6b5cc;margin-top:15px}
+.faq details{background:#101a30;border:1px solid #263957;padding:18px;border-radius:9px;margin-bottom:12px}
+.faq summary{cursor:pointer;font-weight:bold}
+.faq details p{color:#b5c5dc;margin-top:10px}
+footer{padding:30px 0;text-align:center;color:#a6b5cc;border-top:1px solid #263957}
+.wa{position:fixed;bottom:20px;right:20px;background:#20c878;color:white;text-decoration:none;padding:15px 20px;border-radius:50px;box-shadow:0 5px 20px #20c87844;font-weight:bold}
+@media(max-width:750px){
+ nav{flex-wrap:wrap}
+ nav a{margin-left:8px;font-size:13px}
+ .features,.packages,.steps{grid-template-columns:1fr}
+ .hero{padding:65px 10px}
+ .heading h2{font-size:27px}
+ .form-box{padding:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">〰 ZAL NET</div>
+      <div>
+        <a href="#home">Beranda</a>
+        <a href="#paket">Paket</a>
+        <a href="#daftar">Daftar</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div style="font-size:50px;margin-bottom:15px">📡</div>
+    <h1>Internet Cepat,<br><span>Harga Bersahabat!</span></h1>
+    <p>
+      Selamat datang di Zal Net, layanan internet RT/RW Net
+      untuk rumah dan usaha. Nikmati internet untuk belajar,
+      bekerja, streaming, dan hiburan setiap hari.
+    </p>
+    <a href="#paket" class="btn">Lihat Paket Internet →</a>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="heading">
+      <h2>Kenapa Memilih Zal Net?</h2>
+      <p>Layanan internet yang sesuai kebutuhan Anda.</p>
+    </div>
+    <div class="features">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Koneksi Internet</h3>
+        <p>Pilihan kecepatan untuk aktivitas digital harian.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Harga Terjangkau</h3>
+        <p>Paket bulanan dengan pilihan sesuai anggaran.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛠️</div>
+        <h3>Bantuan Teknis</h3>
+        <p>Hubungi admin untuk informasi dan kendala koneksi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="paket">
+  <div class="container">
+    <div class="heading">
+      <h2>Paket Internet</h2>
+      <p>Pilih paket yang sesuai dengan kebutuhan Anda.</p>
+    </div>
+
+    <div class="packages">
+      <div class="card">
+        <h3>Basic</h3>
+        <p>Untuk kebutuhan harian</p>
+        <div class="price">Rp100.000 <small>/bulan</small></div>
+        <ul>
+          <li>Kecepatan hingga 5 Mbps</li>
+          <li>Browsing dan chat</li>
+          <li>Belajar online</li>
+          <li>Dukungan pelanggan</li>
+        </ul>
+        <button class="btn" onclick="pilih('Basic')">Pilih Paket</button>
+      </div>
+
+      <div class="card popular">
+        <div class="tag">★ PAKET FAVORIT</div>
+        <h3>Family</h3>
+        <p>Untuk kebutuhan keluarga</p>
+        <div class="price">Rp150.000 <small>/bulan</small></div>
+        <ul>
+          <li>Kecepatan hingga 10 Mbps</li>
+          <li>Streaming video</li>
+          <li>Video call</li>
+          <li>Dukungan pelanggan</li>
+        </ul>
+        <button class="btn" onclick="pilih('Family')">Pilih Paket</button>
+      </div>
+
+      <div class="card">
+        <h3>Pro</h3>
+        <p>Untuk aktivitas intensif</p>
+        <div class="price">Rp200.000 <small>/bulan</small></div>
+        <ul>
+          <li>Kecepatan hingga 20 Mbps</li>
+          <li>Streaming dan bekerja online</li>
+          <li>Multi-perangkat</li>
+          <li>Dukungan pelanggan</li>
+        </ul>
+        <button class="btn" onclick="pilih('Pro')">Pilih Paket</button>
+      </div>
+    </div>
+
+    <p class="note" style="text-align:center">
+      Harga dan kecepatan di atas adalah rekomendasi awal.
+      Konfirmasikan ketentuan paket dan biaya pemasangan kepada admin.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="heading">
+      <h2>Cara Berlangganan</h2>
+      <p>Hanya tiga langkah mudah.</p>
+    </div>
+    <div class="steps">
+      <div><div class="icon">📦</div><h3>1. Pilih Paket</h3><p>Tentukan paket internet Anda.</p></div>
+      <div><div class="icon">📝</div><h3>2. Isi Formulir</h3><p>Masukkan nama dan alamat pemasangan.</p></div>
+      <div><div class="icon">📡</div><h3>3. Konfirmasi</h3><p>Admin memeriksa jangkauan dan jadwal.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="daftar">
+  <div class="container">
+    <div class="heading">
+      <h2>Formulir Berlangganan</h2>
+      <p>Isi data berikut untuk mendaftar WiFi Zal Net.</p>
+    </div>
+
+    <form class="form-box" id="formDaftar">
+      <label for="nama">Nama Lengkap *</label>
+      <input id="nama" required placeholder="Masukkan nama lengkap">
+
+      <label for="hp">Nomor HP Anda *</label>
+      <input id="hp" type="tel" required placeholder="08xxxxxxxxxx">
+
+      <label for="alamat">Alamat Pemasangan *</label>
+      <textarea id="alamat" required rows="3"
+        placeholder="Desa, RT/RW, kecamatan"></textarea>
+
+      <label for="paket">Pilih Paket *</label>
+      <select id="paket" required>
+        <option value="Basic - 5 Mbps - Rp100.000/bulan">Basic - 5 Mbps</option>
+        <option value="Family - 10 Mbps - Rp150.000/bulan" selected>Family - 10 Mbps</option>
+        <option value="Pro - 20 Mbps - Rp200.000/bulan">Pro - 20 Mbps</option>
+      </select>
+
+      <label for="catatan">Catatan Tambahan</label>
+      <textarea id="catatan" rows="2" placeholder="Opsional"></textarea>
+
+      <button type="submit" class="btn">📱 Daftar via WhatsApp</button>
+      <p class="note">Data akan dikirim sebagai pesan WhatsApp kepada admin.</p>
+    </form>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <div class="heading">
+      <h2>Pertanyaan Umum</h2>
+    </div>
+    <details>
+      <summary>Apakah wilayah saya terjangkau?</summary>
+      <p>Admin akan memeriksa jangkauan jaringan berdasarkan alamat pemasangan Anda.</p>
+    </details>
+    <details>
+      <summary>Apakah ada biaya pemasangan?</summary>
+      <p>Silakan tanyakan kepada admin mengenai biaya instalasi dan perangkat.</p>
+    </details>
+    <details>
+      <summary>Bagaimana cara melaporkan gangguan?</summary>
+      <p>Hubungi admin Zal Net melalui WhatsApp.</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <h3 style="color:#35d9ff">ZAL NET</h3>
+    <p>Internet untuk rumah dan usaha Anda.</p>
+    <p>&copy; <span id="tahun"></span> Zal Net. Semua hak dilindungi.</p>
+  </div>
+</footer>
+
+<a href="#daftar" class="wa" id="waFloat">☏ WhatsApp</a>
+
+<script>
+const NOMOR_ADMIN = "621234567890";
+
+function pilih(nama) {
+  const paket = document.getElementById("paket");
+  const pilihan = {
+    Basic: "Basic - 5 Mbps - Rp100.000/bulan",
+    Family: "Family - 10 Mbps - Rp150.000/bulan",
+    Pro: "Pro - 20 Mbps - Rp200.000/bulan"
+  };
+  paket.value = pilihan[nama];
+  document.getElementById("daftar").scrollIntoView({behavior:"smooth"});
+}
+
+function bukaWhatsApp(pesan) {
+  const url = "https://wa.me/" + NOMOR_ADMIN +
+    "?text=" + encodeURIComponent(pesan);
+  window.open(url, "_blank", "noopener");
+}
+
+document.getElementById("formDaftar").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nama = document.getElementById("nama").value.trim();
+  const hp = document.getElementById("hp").value.trim();
+  const alamat = document.getElementById("alamat").value.trim();
+  const paket = document.getElementById("paket").value;
+  const catatan = document.getElementById("catatan").value.trim();
+
+  const pesan =
+    "HALO ADMIN ZAL NET\n\n" +
+    "Saya ingin berlangganan WiFi.\n\n" +
+    "Nama: " + nama + "\n" +
+    "Nomor HP: " + hp + "\n" +
+    "Alamat: " + alamat + "\n" +
+    "Paket: " + paket + "\n" +
+    "Catatan: " + (catatan || "-") + "\n\n" +
+    "Mohon informasi jangkauan dan jadwal pemasangan.";
+
+  bukaWhatsApp(pesan);
+});
+
+document.getElementById("waFloat").addEventListener("click", function(e) {
+  e.preventDefault();
+  bukaWhatsApp("Halo Admin Zal Net, saya ingin bertanya tentang paket WiFi.");
+});
+
+document.getElementById("tahun").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
